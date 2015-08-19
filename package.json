@@ -1,7 +1,7 @@
 {
   "name": "linter-moonscript",
   "main": "lib/init",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lint Moonscript sources with moonc",
   "repository": "https://github.com/Furyhunter/linter-moonscript",
   "license": "MIT",
