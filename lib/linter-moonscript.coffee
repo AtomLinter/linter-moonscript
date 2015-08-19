@@ -53,22 +53,27 @@ class LinterMoonscript
           currentFile = lines[currentLine]
           currentFile = currentFile.substring 0, currentFile.length - 1
           currentLine += 1
-          state = ParserState.checkFailedToParse
+          if currentFile.length > 0
+            state = ParserState.checkFailedToParse
+          else
+            state = ParserState.done
 
         when ParserState.checkFailedToParse
-
-          if (lines[currentLine].indexOf 'Failed to parse:') != -1
+          if (lines[currentLine]?.indexOf 'Failed to parse:') != -1
             # parse error
             currentLine += 1
             matches = XRegExp.exec lines[currentLine], XRegExp '^ \\[(?<line>[0-9]+)\\] >>'
-            matches.line = parseInt matches.line
-            message =
-              type: 'Error'
-              text: 'Syntax error'
-              filePath: currentFile
-              range: [[matches.line - 1, 0], [matches.line, 0]]
-            messages.push message
-            state = ParserState.done
+            if matches?
+              matches.line = parseInt matches.line
+              message =
+                type: 'Error'
+                text: 'Syntax error'
+                filePath: currentFile
+                range: [[matches.line - 1, 0], [matches.line, 0]]
+              messages.push message
+              state = ParserState.done
+            else
+              state = ParserState.line
           else
             currentLine += 1
             state = ParserState.line
