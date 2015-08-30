@@ -50,8 +50,7 @@ class LinterMoonscript
       switch state
         when ParserState.file
           # parse file name
-          currentFile = lines[currentLine]
-          currentFile = currentFile.substring 0, currentFile.length - 1
+          currentFile = lines[currentLine].trim()
           currentLine += 1
           if currentFile.length > 0
             state = ParserState.checkFailedToParse
