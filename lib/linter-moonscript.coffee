@@ -25,7 +25,7 @@ class LinterMoonscript
       stderr = (err) ->
         output.push err
       exit = (code) =>
-        if code is 0
+        if code is 0 or 1
           messages = @parse options.cwd, output.join ''
           resolve messages
         else
