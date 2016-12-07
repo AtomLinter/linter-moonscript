@@ -1,5 +1,22 @@
 # Change Log
 
+## [v1.0.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.0.0) (2016-12-07)
+[Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v0.1.2...v1.0.0)
+
+**Implemented enhancements:**
+
+- Implement specs [\#4](https://github.com/AtomLinter/linter-moonscript/issues/4)
+- Install `linter` automatically. [\#3](https://github.com/AtomLinter/linter-moonscript/issues/3)
+- Use helper module [\#1](https://github.com/AtomLinter/linter-moonscript/issues/1)
+- Add CI Configuration [\#8](https://github.com/AtomLinter/linter-moonscript/pull/8) ([Arcanemagus](https://github.com/Arcanemagus))
+- Rewrite in ES2017 [\#7](https://github.com/AtomLinter/linter-moonscript/pull/7) ([Arcanemagus](https://github.com/Arcanemagus))
+
+**Fixed bugs:**
+
+- moonc exited non-zero code  [\#5](https://github.com/AtomLinter/linter-moonscript/issues/5)
+- Rewrite in ES2017 [\#7](https://github.com/AtomLinter/linter-moonscript/pull/7) ([Arcanemagus](https://github.com/Arcanemagus))
+- Fixed moonc exited without error code 0 error [\#6](https://github.com/AtomLinter/linter-moonscript/pull/6) ([AndrewBastin](https://github.com/AndrewBastin))
+
 ## [v0.1.2](https://github.com/AtomLinter/linter-moonscript/tree/v0.1.2) (2015-08-30)
 [Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v0.1.1...v0.1.2)
 
