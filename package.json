@@ -3,10 +3,16 @@
   "main": "lib/init",
   "version": "0.1.2",
   "description": "Lint Moonscript sources with moonc",
-  "repository": "https://github.com/Furyhunter/linter-moonscript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtomLinter/linter-moonscript"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=0.50.0"
+  "scripts": {
+    "test": "apm test",
+    "lint": "eslint ."
   },
   "providedServices": {
     "linter": {
