@@ -12,6 +12,11 @@
       "type": "string",
       "default": "moonc",
       "description": "Full path to the moonscript compiler."
+    },
+    "omitGlobalCheck": {
+      "type": "boolean",
+      "default": false,
+      "description": "Omit \"accessing global\" warning."
     }
   },
   "license": "MIT",
