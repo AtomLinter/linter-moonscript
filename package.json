@@ -16,7 +16,7 @@
     "omitGlobalCheck": {
       "type": "boolean",
       "default": false,
-      "description": "Omit \"accessing global\" warning."
+      "description": "Omit \"accessing global\" warnings."
     }
   },
   "license": "MIT",
