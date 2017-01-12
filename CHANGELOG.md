@@ -1,5 +1,13 @@
 # Change Log
 
+## [v1.1.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.1.0) (2017-01-12)
+[Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v1.0.0...v1.1.0)
+
+**Implemented enhancements:**
+
+- Optionally omit globals warning [\#10](https://github.com/AtomLinter/linter-moonscript/pull/10) ([dcr30](https://github.com/dcr30))
+- Update dependencies to enable Greenkeeper 🌴 [\#9](https://github.com/AtomLinter/linter-moonscript/pull/9) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
 ## [v1.0.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.0.0) (2016-12-07)
 [Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v0.1.2...v1.0.0)
 

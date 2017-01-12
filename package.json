@@ -1,7 +1,7 @@
 {
   "name": "linter-moonscript",
   "main": "lib/init",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lint Moonscript sources with moonc",
   "repository": {
     "type": "git",
