@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.1.1](https://github.com/AtomLinter/linter-moonscript/tree/v1.1.1) (2017-02-13)
+[Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v1.1.0...v1.1.1)
+
+**Implemented enhancements:**
+
+- Update atom-linter to the latest version 🚀 [\#11](https://github.com/AtomLinter/linter-moonscript/pull/11) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
 ## [v1.1.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.1.0) (2017-01-12)
 [Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v1.0.0...v1.1.0)
 
