@@ -8,7 +8,7 @@ const goodPath = join(__dirname, 'fixtures', 'good.moon');
 const badPath = join(__dirname, 'fixtures', 'bad.moon');
 const parseFailPath = join(__dirname, 'fixtures', 'parseFail.moon');
 
-const lint = provideLinter().lint;
+const { lint } = provideLinter();
 
 describe('The Moonscript provider for Linter', () => {
   describe('works with Moonscript files and', () => {
@@ -28,9 +28,7 @@ describe('The Moonscript provider for Linter', () => {
       waitsForPromise(() =>
         atom.workspace.open(goodPath)
           .then(editor => lint(editor))
-          .then(messages => expect(messages.length).toBe(0)),
-      ),
-    );
+          .then(messages => expect(messages.length).toBe(0))));
 
     it('handles parse failures', () => {
       waitsForPromise(() =>
@@ -43,8 +41,7 @@ describe('The Moonscript provider for Linter', () => {
           expect(messages[0].text).toBe('Syntax error');
           expect(messages[0].filePath).toBe(parseFailPath);
           expect(messages[0].range).toEqual([[0, 0], [0, 19]]);
-        }),
-      );
+        }));
     });
 
     it('handles regular warnings', () => {
@@ -65,8 +62,7 @@ describe('The Moonscript provider for Linter', () => {
           expect(messages[1].text).toBe('assigned but unused `my_number`');
           expect(messages[1].filePath).toBe(badPath);
           expect(messages[1].range).toEqual([[0, 0], [0, 16]]);
-        }),
-      );
+        }));
     });
   });
 });
