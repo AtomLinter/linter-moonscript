@@ -27,7 +27,7 @@
     "language-moonscript:grammar-used"
   ],
   "package-deps": [
-    "linter",
+    "linter:2.0.0",
     "language-moonscript"
   ],
   "scripts": {
@@ -57,7 +57,7 @@
   "providedServices": {
     "linter": {
       "versions": {
-        "1.0.0": "provideLinter"
+        "2.0.0": "provideLinter"
       }
     }
   },
