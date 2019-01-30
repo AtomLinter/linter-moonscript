@@ -1,11 +1,30 @@
 # Change Log
 
-## [v1.1.1](https://github.com/AtomLinter/linter-moonscript/tree/v1.1.1) (2017-02-13)
+## [v1.2.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.2.0) (2019-01-30)
+[Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v1.1.1...v1.2.0)
+
+**Implemented enhancements:**
+
+- fix: support v2 Linter API [\#30](https://github.com/AtomLinter/linter-moonscript/pull/30) ([vzamanillo](https://github.com/vzamanillo))
+- Update atom-package-deps to version 5.0.0 🚀 [\#28](https://github.com/AtomLinter/linter-moonscript/pull/28) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Asyncify the specs [\#19](https://github.com/AtomLinter/linter-moonscript/pull/19) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update eslint-config-airbnb-base to version 12.0.0 🚀 [\#18](https://github.com/AtomLinter/linter-moonscript/pull/18) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update eslint to version 4.3.0 🚀 [\#17](https://github.com/AtomLinter/linter-moonscript/pull/17) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update xregexp to version 3.2.0 🚀 [\#14](https://github.com/AtomLinter/linter-moonscript/pull/14) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update atom-linter to version 10.0.0 🚀 [\#13](https://github.com/AtomLinter/linter-moonscript/pull/13) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
+**Fixed bugs:**
+
+- Support v2 Linter API [\#29](https://github.com/AtomLinter/linter-moonscript/issues/29)
+- Migrate CircleCI to a 2.0 configuration [\#21](https://github.com/AtomLinter/linter-moonscript/issues/21)
+- Upgrade to CircleCI 2.0 [\#27](https://github.com/AtomLinter/linter-moonscript/pull/27) ([Arcanemagus](https://github.com/Arcanemagus))
+
+## [v1.1.1](https://github.com/AtomLinter/linter-moonscript/tree/v1.1.1) (2017-02-14)
 [Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v1.1.0...v1.1.1)
 
 **Implemented enhancements:**
 
-- Update atom-linter to the latest version 🚀 [\#11](https://github.com/AtomLinter/linter-moonscript/pull/11) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update atom-linter to version 9.0.0 🚀 [\#11](https://github.com/AtomLinter/linter-moonscript/pull/11) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v1.1.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.1.0) (2017-01-12)
 [Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v1.0.0...v1.1.0)
@@ -13,7 +32,7 @@
 **Implemented enhancements:**
 
 - Optionally omit globals warning [\#10](https://github.com/AtomLinter/linter-moonscript/pull/10) ([dcr30](https://github.com/dcr30))
-- Update dependencies to enable Greenkeeper 🌴 [\#9](https://github.com/AtomLinter/linter-moonscript/pull/9) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update dependencies to enable Greenkeeper 🌴 [\#9](https://github.com/AtomLinter/linter-moonscript/pull/9) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v1.0.0](https://github.com/AtomLinter/linter-moonscript/tree/v1.0.0) (2016-12-07)
 [Full Changelog](https://github.com/AtomLinter/linter-moonscript/compare/v0.1.2...v1.0.0)
