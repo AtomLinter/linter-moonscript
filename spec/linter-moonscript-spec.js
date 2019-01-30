@@ -1,9 +1,12 @@
 'use babel';
 
-// eslint-disable-next-line no-unused-vars
-import { it, fit, wait, beforeEach, afterEach } from 'jasmine-fix';
+import {
+  // eslint-disable-next-line no-unused-vars
+  it, fit, wait, beforeEach, afterEach,
+} from 'jasmine-fix';
 import { join } from 'path';
 
+// eslint-disable-next-line import/named
 import { provideLinter } from '../lib/init';
 
 const goodPath = join(__dirname, 'fixtures', 'good.moon');
