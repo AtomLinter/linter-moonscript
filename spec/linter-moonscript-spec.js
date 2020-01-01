@@ -1,9 +1,12 @@
 'use babel';
 
-// eslint-disable-next-line no-unused-vars
-import { it, fit, wait, beforeEach, afterEach } from 'jasmine-fix';
+import {
+  // eslint-disable-next-line no-unused-vars
+  it, fit, wait, beforeEach, afterEach,
+} from 'jasmine-fix';
 import { join } from 'path';
 
+// eslint-disable-next-line import/named
 import { provideLinter } from '../lib/init';
 
 const goodPath = join(__dirname, 'fixtures', 'good.moon');
@@ -35,12 +38,12 @@ describe('The Moonscript provider for Linter', () => {
       const messages = await lint(editor);
 
       expect(messages.length).toBe(1);
-      expect(messages[0].type).toBe('Error');
       expect(messages[0].severity).toBe('error');
-      expect(messages[0].html).not.toBeDefined();
-      expect(messages[0].text).toBe('Syntax error');
-      expect(messages[0].filePath).toBe(parseFailPath);
-      expect(messages[0].range).toEqual([[0, 0], [0, 19]]);
+      expect(messages[0].description).not.toBeDefined();
+      expect(messages[0].url).not.toBeDefined();
+      expect(messages[0].excerpt).toBe('Syntax error');
+      expect(messages[0].location.file).toBe(parseFailPath);
+      expect(messages[0].location.position).toEqual([[0, 0], [0, 19]]);
     });
 
     it('handles regular warnings', async () => {
@@ -49,19 +52,19 @@ describe('The Moonscript provider for Linter', () => {
 
       expect(messages.length).toBe(2);
 
-      expect(messages[0].type).toBe('Warning');
       expect(messages[0].severity).toBe('warning');
-      expect(messages[0].html).not.toBeDefined();
-      expect(messages[0].text).toBe('accessing global `my_nmuber`');
-      expect(messages[0].filePath).toBe(badPath);
-      expect(messages[0].range).toEqual([[5, 4], [5, 18]]);
+      expect(messages[0].description).not.toBeDefined();
+      expect(messages[0].url).not.toBeDefined();
+      expect(messages[0].excerpt).toBe('accessing global `my_nmuber`');
+      expect(messages[0].location.file).toBe(badPath);
+      expect(messages[0].location.position).toEqual([[5, 4], [5, 18]]);
 
-      expect(messages[1].type).toBe('Warning');
       expect(messages[1].severity).toBe('warning');
-      expect(messages[1].html).not.toBeDefined();
-      expect(messages[1].text).toBe('assigned but unused `my_number`');
-      expect(messages[1].filePath).toBe(badPath);
-      expect(messages[1].range).toEqual([[0, 0], [0, 16]]);
+      expect(messages[1].description).not.toBeDefined();
+      expect(messages[1].url).not.toBeDefined();
+      expect(messages[1].excerpt).toBe('assigned but unused `my_number`');
+      expect(messages[1].location.file).toBe(badPath);
+      expect(messages[1].location.position).toEqual([[0, 0], [0, 16]]);
     });
   });
 });
